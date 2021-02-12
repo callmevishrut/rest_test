@@ -10,6 +10,8 @@ const db = mongoose.connection;
 db.on('error', (error) => console.error(error));
 db.once('open', () => console.log('Connected to Database'));
 
+//for server to accept json
+//.use is for middleware
 app.use(express.json());
 
 const membersRouter = require('./routes/members');

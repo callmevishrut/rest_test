@@ -1,0 +1,22 @@
+GET http://localhost:3000/members
+
+###
+
+GET http://localhost:3000/members/60261916938a7002780ad3b6
+
+###
+POST http://localhost:3000/members
+Content-Type: application/json
+
+{
+    "name": "member_1"
+}
+
+###
+PATCH http://localhost:3000/members/60261a7a0dfabc0320c713f1
+Content-Type: application/json
+
+{
+    "name" : "First Member"
+}
+

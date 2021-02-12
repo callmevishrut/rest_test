@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 
 //Creating the schema for the database
 
-var memSchema = new Schema({
+const memSchema = new Schema({
     name: {
         type: String,
         required: 'Kindly Enter the name of the member'
@@ -22,5 +22,5 @@ var memSchema = new Schema({
     }
 
 });
-
-module.exports = mongoose.model('Members', memSchema);
+//export the schema
+module.exports = mongoose.model('memberModel', memSchema);
